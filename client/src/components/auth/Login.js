@@ -20,10 +20,10 @@ const Login = ({ login, isAuthenticated }) => {
     login(email, password);
   };
 
-  //Redirect if logged in
+  //Redirect to dashboard if logged in
 
   if (isAuthenticated) {
-    return <Redirect to="/dashborad" />;
+    return <Redirect to="/dashboard" />;
   }
 
   return (
